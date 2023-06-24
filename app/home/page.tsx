@@ -1,7 +1,7 @@
-import TopNavBar from "@/Components/Layout/Header/TopNavBar";
-import Hero from "@/Components/home/Hero";
-import SejarahSingkat from "@/Components/home/SejarahSingkat";
-import Wcu from "@/Components/home/Wcu";
+import TopNavBar from "@/components/Layout/Header/TopNavBar";
+import Hero from "@/components/home/Hero";
+import SejarahSingkat from "@/components/home/SejarahSingkat";
+import Wcu from "@/components/home/Wcu";
 
 export default function Home() {
   return (

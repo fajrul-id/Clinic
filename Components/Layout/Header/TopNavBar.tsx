@@ -5,7 +5,7 @@ import { Transition } from "@headlessui/react";
 import "./styles.css";
 import LinkNav from "./LinkNav";
 import { menu } from "@/dummy/menu";
-import { ButtonContact } from "@/Components/Button";
+import { ButtonContact } from "@/components/Button";
 
 const TopNavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

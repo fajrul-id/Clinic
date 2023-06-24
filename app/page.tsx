@@ -1,7 +1,7 @@
-import TopNavBar from "@/Components/Layout/Header/TopNavBar";
+import TopNavBar from "@/components/Layout/Header/TopNavBar";
 import { useRouter } from "next/navigation";
 import Home from "./home/page";
-import Footer from "@/Components/Layout/Footer/Footer";
+import Footer from "@/components/Layout/Footer/Footer";
 
 export default function App() {
   return (
