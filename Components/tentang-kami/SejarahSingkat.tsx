@@ -4,12 +4,16 @@ import React from "react";
 const SejarahSingkat = () => {
   return (
     <div
-      style={{ backgroundImage: `url("/bg.jpg")` }}
-      className="pt-4 px-4 pb-6 sm:px-6 lg:px-8 bg-no-repeat"
+      style={{ backgroundImage: `url("/bg4.jpg")` }}
+      className="pt-4 px-8 pb-6 sm:px-6 lg:px-8 bg-no-repeat bg-cover bg-center"
     >
-      <div className="flex flex-col md:flex-row gap-8 py-8">
+      <div className="flex flex-col md:flex-row-reverse gap-8 py-8">
         <div className="flex justify-center md:w-1/2">
-          <img src="/profile.jpg" alt="sejarahsingkat" className="max-h-[300px] md:max-h-[400px]" />
+          <img
+            src="/profile.jpg"
+            alt="sejarahsingkat"
+            className="max-h-[300px] md:max-h-[600px]"
+          />
         </div>
         <div className="flex flex-col gap-4 md:gap-8 md:w-1/2">
           <div>

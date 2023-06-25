@@ -6,8 +6,8 @@ import { SiReadthedocs } from "react-icons/si";
 
 const Wcu = () => {
   return (
-    <div style={{backgroundImage: `url("/bg.jpg")`}} className="pt-4 px-4 pb-6 sm:px-6 lg:px-8">
-      <h1 className="text-5xl bg-blue text-gray-200 rounded-md p-8">
+    <div>
+      <h1 className="text-2xl md:text-5xl bg-blue text-gray-200 rounded-md md:p-6 p-4">
         Why choose us?
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-8">

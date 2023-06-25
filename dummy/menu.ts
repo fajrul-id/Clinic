@@ -16,16 +16,16 @@ export const menu = [
         path : "/layanan",
     },
     {
-        name : "Facilitas",
+        name : "Fasilitas",
         path : "/fasilitas",
     },
     {
-        name : "Galeri",
-        path : "/galeri",
+        name : "Edukasi",
+        path : "/edukasi",
     },
     {
-        name : "Kontak",
-        path : "/Kontak",
+        name : "Kontak dan Lokasi",
+        path : "/kontak",
     },
 
 ]
