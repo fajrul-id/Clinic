@@ -1,8 +1,9 @@
 import React from 'react'
 
-const head = () => {
+const Head = () => {
   return (
     <>
+    <title>Klinik Bidan Okti Susanti</title>
     <meta property="og:title" content="Bidan okti" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.klinikbidanokti.com/" />
@@ -38,4 +39,4 @@ const head = () => {
   )
 }
 
-export default head
+export default Head
