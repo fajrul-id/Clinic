@@ -9,8 +9,6 @@ const Head = () => {
       <meta property="og:description" content="Cek Lebih Lanjut..." />
       <meta property="og:image" itemProp="image" content="/profile.jpg" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Bidan okti" />
-      <meta property="og:type" content="website" />
       <meta property="og:url" content="https://www.klinikbidanokti.com/" />
       <meta itemProp="name" content="Klinik BOS (Bidan Okti Susanti)" />
       <meta
