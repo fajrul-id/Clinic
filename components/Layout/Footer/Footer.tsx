@@ -83,10 +83,10 @@ const Footer = () => {
               </svg>
             </div>
             <p className="mt-6 max-w-md text-center leading-relaxed text-background sm:max-w-xs sm:text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
+              Praktek Mandiri Bidan Okti Susanti ( BOS ) Graha Harapan Regency
+              Blok D4 No. 6, Babelan Kota, Kabupaten Bekasi, Jawa Barat 17610
             </p>
-            <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+            {/* <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
               <li>
                 <a
                   href="/"
@@ -193,7 +193,7 @@ const Footer = () => {
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="text-center sm:text-left">
@@ -233,7 +233,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="mt-4 text-sm text-background sm:order-first sm:mt-0">
-              © 2023 Company Name
+              © 2023 by fajrul.id
             </p>
           </div>
         </div>
