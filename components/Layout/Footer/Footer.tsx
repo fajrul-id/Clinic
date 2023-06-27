@@ -218,19 +218,7 @@ const Footer = () => {
           <div className="text-center sm:flex sm:justify-between sm:text-left">
             <p className="text-sm text-background">
               <span className="block sm:inline">All rights reserved.</span>
-              <a
-                className="inline-block text-cream underline transition hover:text-cream/75"
-                href="/"
-              >
-                Terms &amp; Conditions
-              </a>
-              <span>·</span>
-              <a
-                className="inline-block text-cream underline transition hover:text-cream/75"
-                href="/"
-              >
-                Privacy Policy
-              </a>
+              
             </p>
             <p className="mt-4 text-sm text-background sm:order-first sm:mt-0">
               © 2023 by fajrul.id
