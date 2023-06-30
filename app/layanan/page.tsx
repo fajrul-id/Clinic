@@ -25,7 +25,7 @@ const layanan = [
     desc: (
       <>
         <p>
-          Persalinan normal di Klinik Bidan Atria dapat ditangani oleh dokter
+          Persalinan normal di Klinik Bidan Okti Susanti dapat ditangani oleh dokter
           spesial kandungan dan Bidan. Percayakan persalinan normal bunda kepada
           klinik kami.
         </p>
