@@ -17,7 +17,6 @@ export default function Home() {
             className="pt-4 px-4 pb-6 sm:px-6 lg:px-8 mx-auto"
           >
             <Wcu />
-            <SejarahSingkat />
             <Stats/>
             <Testimoni/>
           </div>

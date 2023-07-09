@@ -24,7 +24,7 @@ const TopNavBar: React.FC = () => {
               </a>
             </div>
           </div>
-          <menu className="md:flex hidden">
+          <menu className="lg:flex hidden">
             {menu.map((e, i) => (
               <LinkNav key={i} path={e.path}>
                 {e.name}
@@ -33,7 +33,7 @@ const TopNavBar: React.FC = () => {
 
           <ButtonContact>Buat Janji</ButtonContact>
           </menu>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleOpen}
               className="text-primary hover:text-primary focus:outline-none focus:text-primary"
@@ -77,7 +77,7 @@ const TopNavBar: React.FC = () => {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1"
       >
-        <div className="md:hidden z-50">
+        <div className="lg:hidden z-50">
           <div className="px-2 pt-2 pb-3 sm:px-3">
             {menu.map((e, i) => (
               <div key={i} className="flex items-center py-1 border-y">
