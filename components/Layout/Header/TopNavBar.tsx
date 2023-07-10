@@ -6,6 +6,7 @@ import "./styles.css";
 import LinkNav from "./LinkNav";
 import { menu } from "@/dummy/menu";
 import { ButtonContact } from "@/components/Button";
+import Link from "next/link";
 
 const TopNavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,6 @@ const TopNavBar: React.FC = () => {
                 {e.name}
               </LinkNav>
             ))}
-
           <ButtonContact>Buat Janji</ButtonContact>
           </menu>
           <div className="lg:hidden">
