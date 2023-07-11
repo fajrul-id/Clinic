@@ -25,7 +25,8 @@ Message: ${message}
   return (
     <div className="max-w-md w-full my-10 bg-white p-5 rounded-md shadow-md">
       <h2 className="text-2xl font-bold mb-5">Buat Janji atau Hubungi Kami</h2>
-      <p className="py-2 text-secondary">Silahkan isi formulir ,lalu anda akan langsung di arahkan ke WhatsApp Kami</p>
+      <p className="pt-2 text-secondary">Silahkan isi formulir ,lalu anda akan langsung di arahkan ke WhatsApp Kami</p>
+      <a href="mailto:oktisusanti02@gmail.com" className="text-secondary">atau Email ke <p className="text-red-500 font-bold">oktisusanti02@gmail.com</p></a>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block font-medium">

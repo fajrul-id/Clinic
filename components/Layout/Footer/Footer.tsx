@@ -34,6 +34,7 @@ const Footer = () => {
               Praktek Mandiri Bidan Okti Susanti ( BOS ) Graha Harapan Regency
               Blok D4 No. 6, Babelan Kota, Kabupaten Bekasi, Jawa Barat 17610
             </p>
+            <a className="mt-2" href="mailto:oktisusanti02@gmail.com">oktisusanti02@gmail.com</a>
           </div>
 
           <ul className="flex flex-col gap-6 sm:gap-2 sm:justify-start">
