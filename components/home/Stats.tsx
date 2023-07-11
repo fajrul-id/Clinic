@@ -5,7 +5,7 @@ import { CountUp } from "use-count-up";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Stats = () => {
-  const [isCounting, setisCounting] = useState(false)
+  const [isCounting, setisCounting] = useState(false);
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
@@ -14,25 +14,23 @@ const Stats = () => {
       offset: 65,
     });
   }, []);
-  
+
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
     if (offset > 1212) {
       setisCounting(true);
-    }
-    else{
+    } else {
       setisCounting(false);
     }
-    console.log(offset)
+    console.log(offset);
     // clean up code
-    window.removeEventListener('scroll', onScroll);
-    window.addEventListener('scroll', onScroll, {passive: true});
-    return () => window.removeEventListener('scroll', onScroll);
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, [offset]);
 
   return (
-    <div className="my-8"  data-aos="fade-left"
-    data-aos-delay="1000">
+    <div className="my-8" data-aos="fade-left" data-aos-delay="1000">
       <h1 className="text-2xl md:text-5xl bg-blue text-gray-200 rounded-md md:p-8 p-4">
         Statistik Pasien
       </h1>
@@ -53,16 +51,14 @@ const Stats = () => {
                 Persalinan normal
               </p>
               <div className="text-lg font-semibold text-gray-700 ">
-              <CountUp
-          start={0}
-          end={350}
-          easing="linear"
-          duration={undefined}
-          isCounting={isCounting}
-          formatter={(value) => value.toLocaleString()}
-        >
-          {({ value }) => value}
-        </CountUp>+
+                <CountUp
+                  start={0}
+                  end={350}
+                  easing="linear"
+                  duration={undefined}
+                  isCounting={isCounting}
+                />
+                +
               </div>
             </div>
           </div>
@@ -79,16 +75,14 @@ const Stats = () => {
                 Pemeriksaan kehamilan
               </p>
               <div className="text-lg font-semibold text-gray-700 ">
-              <CountUp
-          start={0}
-          end={1000}
-          easing="linear"
-          duration={undefined}
-          isCounting={isCounting}
-          formatter={(value) => value.toLocaleString()}
-        >
-          {({ value }) => value}
-        </CountUp>+
+                <CountUp
+                  start={0}
+                  end={1000}
+                  easing="linear"
+                  duration={undefined}
+                  isCounting={isCounting}
+                />
+                +
               </div>
             </div>
           </div>
@@ -103,16 +97,14 @@ const Stats = () => {
             <div>
               <p className="mb-2 text-sm font-medium text-gray-600 ">KB</p>
               <div className="text-lg font-semibold text-gray-700 ">
-              <CountUp
-          start={0}
-          end={1000}
-          easing="linear"
-          duration={undefined}
-          isCounting={isCounting}
-          formatter={(value) => value.toLocaleString()}
-        >
-          {({ value }) => value}
-        </CountUp>+
+                <CountUp
+                  start={0}
+                  end={1000}
+                  easing="linear"
+                  duration={undefined}
+                  isCounting={isCounting}
+                />
+                +
               </div>
             </div>
           </div>
@@ -127,16 +119,14 @@ const Stats = () => {
             <div>
               <p className="mb-2 text-sm font-medium text-gray-600 ">KIA</p>
               <div className="text-lg font-semibold text-gray-700 ">
-              <CountUp
-          start={0}
-          end={5000}
-          easing="linear"
-          duration={undefined}
-          isCounting={isCounting}
-          formatter={(value) => value.toLocaleString()}
-        >
-          {({ value }) => value}
-        </CountUp>+
+                <CountUp
+                  start={0}
+                  end={5000}
+                  easing="linear"
+                  duration={undefined}
+                  isCounting={isCounting}
+                />
+                +
               </div>
             </div>
           </div>
