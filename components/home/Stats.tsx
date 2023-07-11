@@ -1,14 +1,42 @@
 "use client";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { CountUp } from "use-count-up";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Stats = () => {
+  const [isCounting, setisCounting] = useState(false)
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    // here you can add your aos options
+    AOS.init({
+      offset: 65,
+    });
+  }, []);
+  
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+    if (offset > 1212) {
+      setisCounting(true);
+    }
+    else{
+      setisCounting(false);
+    }
+    console.log(offset)
+    // clean up code
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, {passive: true});
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [offset]);
+
   return (
-    <div className="my-8">
+    <div className="my-8"  data-aos="fade-left"
+    data-aos-delay="1000">
       <h1 className="text-2xl md:text-5xl bg-blue text-gray-200 rounded-md md:p-8 p-4">
         Statistik Pasien
       </h1>
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4 my-8">
-        
         <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white ">
           <div className="p-4 flex items-center">
             <div className="p-3 rounded-full text-teal-500 dark:text-teal-100 bg-teal-100 dark:bg-teal-500 mr-4">
@@ -24,7 +52,18 @@ const Stats = () => {
               <p className="mb-2 text-sm font-medium text-gray-600 ">
                 Persalinan normal
               </p>
-              <p className="text-lg font-semibold text-gray-700 ">350+</p>
+              <div className="text-lg font-semibold text-gray-700 ">
+              <CountUp
+          start={0}
+          end={350}
+          easing="linear"
+          duration={undefined}
+          isCounting={isCounting}
+          formatter={(value) => value.toLocaleString()}
+        >
+          {({ value }) => value}
+        </CountUp>+
+              </div>
             </div>
           </div>
         </div>
@@ -39,7 +78,18 @@ const Stats = () => {
               <p className="mb-2 text-sm font-medium text-gray-600 ">
                 Pemeriksaan kehamilan
               </p>
-              <p className="text-lg font-semibold text-gray-700 ">1200+</p>
+              <div className="text-lg font-semibold text-gray-700 ">
+              <CountUp
+          start={0}
+          end={1000}
+          easing="linear"
+          duration={undefined}
+          isCounting={isCounting}
+          formatter={(value) => value.toLocaleString()}
+        >
+          {({ value }) => value}
+        </CountUp>+
+              </div>
             </div>
           </div>
         </div>
@@ -52,7 +102,18 @@ const Stats = () => {
             </div>
             <div>
               <p className="mb-2 text-sm font-medium text-gray-600 ">KB</p>
-              <p className="text-lg font-semibold text-gray-700 ">1000+</p>
+              <div className="text-lg font-semibold text-gray-700 ">
+              <CountUp
+          start={0}
+          end={1000}
+          easing="linear"
+          duration={undefined}
+          isCounting={isCounting}
+          formatter={(value) => value.toLocaleString()}
+        >
+          {({ value }) => value}
+        </CountUp>+
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +126,18 @@ const Stats = () => {
             </div>
             <div>
               <p className="mb-2 text-sm font-medium text-gray-600 ">KIA</p>
-              <p className="text-lg font-semibold text-gray-700 ">5000+</p>
+              <div className="text-lg font-semibold text-gray-700 ">
+              <CountUp
+          start={0}
+          end={5000}
+          easing="linear"
+          duration={undefined}
+          isCounting={isCounting}
+          formatter={(value) => value.toLocaleString()}
+        >
+          {({ value }) => value}
+        </CountUp>+
+              </div>
             </div>
           </div>
         </div>
