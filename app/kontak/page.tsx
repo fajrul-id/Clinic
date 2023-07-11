@@ -1,5 +1,5 @@
 import Form from "@/components/kontak/Form";
-import { FiInstagram, FiFacebook, FiGithub, FiTwitter } from "react-icons/fi";
+import { FiInstagram, FiFacebook, FiGithub, FiTwitter, FiYoutube } from "react-icons/fi";
 import { BsDot } from "react-icons/bs";
 
 export default function Home() {
@@ -22,8 +22,8 @@ export default function Home() {
                     Media Sosial
                   </h1>
                   <div className="flex flex-col gap-4 p-8 bg-white">
-                    <a href="https://www.facebook.com" className="flex items-center gap-4 text-white p-4 bg-blue hover:bg-opacity-75 rounded-md">
-                      <FiFacebook className="text-white text-4xl border p-1 rounded-full"/>
+                    <a href="https://youtu.be/bCb-Lqb-lug" className="flex items-center gap-4 text-white p-4 bg-red-500 hover:bg-opacity-75 rounded-md">
+                      <FiYoutube className="text-white text-4xl border p-1 rounded-full"/>
                       <p>Bidan Okti Susanti</p>
                     </a>
                     <a href="https://instagram.com/bos_bidan_okti_susanti?igshid=OGQ5ZDc2ODk2ZA==" className="flex items-center gap-4 text-white font-semibold p-4 bg-rose-400 hover:bg-opacity-75 rounded-md">

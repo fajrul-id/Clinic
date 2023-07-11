@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
-  
   const [list, setlist] = useState([]);
   useEffect(() => {
     getData();
@@ -36,7 +36,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <ul className="flex flex-col gap-6 sm:justify-start md:gap-8">
+          <ul className="flex flex-col gap-6 sm:gap-2 sm:justify-start">
             <li>
               <div>
                 <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white ">
@@ -83,6 +83,16 @@ const Footer = () => {
                   />
                 </svg>
                 <p>Bidan okti Susanti</p>
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                href="https://youtu.be/bCb-Lqb-lug"
+                className="flex items-center gap-4 text-white p-3 bg-red-500 hover:bg-opacity-75 rounded-md"
+              >
+                <FiYoutube className="text-white text-4xl border p-1 rounded-full" />
+                <p>Bidan Okti Susanti</p>
               </a>
             </li>
           </ul>
